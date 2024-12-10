@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap"
+          rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="bg-cream h-screen overflow-auto flex flex-col justify-between">
+    <div class="flex items-center justify-center flex-grow m-6">
+        <main class="bg-white max-w-[612px] w-full mx-auto rounded-xl sm:h-[460px] h-full
+        rounded-none flex flex-col sm:flex-row items-center">
+            <div class="sm:w-1/2 w-full h-full rounded-xl sm:rounded-r-none rounded-b-none">
+                <img class="hidden sm:block rounded-xl rounded-r-none" src="./images/image-product-desktop.jpg" alt="desktop">
+                <img class="sm:hidden rounded-xl rounded-b-none" src="./images/image-product-mobile.jpg" alt="mobile">
+            </div>
+            <div class="p-8 sm:w-1/2 w-full h-full">
+                <h6 class="text-sm text-blue-grayish font-montserrat uppercase tracking-widest">Perfume</h6>
+                <h2 class="text-3xl font-bold text-blue-dark font-fraunces my-5">Gabrielle Essence Eau De Parfum</h2>
+                <p class="text-blue-grayish font-montserrat text-sm">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                    Perfumer-Creator for the House of CHANEL.</p>
+                <div class="flex items-center gap-5 my-8">
+                    <h2 class="text-3xl font-bold text-cyan font-fraunces">
+                        $149.99</h2>
+                    <span class="text-sm line-through text-blue-grayish font-montserrat">$169.99</span>
+                </div>
+
+                <button class="flex items-center gap-2 justify-center text-white font-montserrat bg-cyan
+                rounded-xl p-3 w-full font-medium hover:bg-green">
+                    <img src="./images/icon-cart.svg" alt="icon-cart">
+                    <span>Add to Cart</span>
+                </button>
+            </div>
+        </main>
+    </div>
+    <!-- Attribution at the bottom -->
+    <div class="attribution text-sm text-gray-600 text-center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                        class="text-blue-500 underline">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/OybekMavlonov/frontendmentor-product-preview-card-component" target="_blank"
+                    class="text-blue-500 underline">Oybek</a>.
+    </div>
+</div>
+</body>
+</html>
